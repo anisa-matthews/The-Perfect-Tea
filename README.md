@@ -1,7 +1,3 @@
-The content below is an example project proposal / requirements document. Replace the text below the lines marked "__TODO__" with details specific to your project. Remove the "TODO" lines.
-
-(___TODO__: your project name_)
-
 # The Perfect Tea 
 
 ## Overview
@@ -27,6 +23,7 @@ An Example Tea Schema:
 ```javascript
 {
   name: "Green",
+  desc: //description of tea origins, properties, whatnot,
   tags: "antioxidant", etc. //a reference to tag documents that contain this tea
 }
 ```
@@ -56,36 +53,27 @@ An Example User:
 
 ## Wireframes
 
-(___TODO__: wireframes for all of the pages on your site; they can be as simple as photos of drawings or you can use a tool like Balsamiq, Omnigraffle, etc._)
+/- landing page
 
-/list/create - page for creating a new shopping list
+![landing page](documentation/home)
 
-![list create](documentation/list-create.png)
+/search... - page generating search results
 
-/list - page for showing all shopping lists
+![list](documentation/search)
 
-![list](documentation/list.png)
+/favorites - page for showing user's saved teas
 
-/list/slug - page for showing specific shopping list
-
-![list](documentation/list-slug.png)
+![list](documentation/favorites)
 
 ## Site map
 
-(___TODO__: draw out a site map that shows how pages are related to each other_)
-
-Here's a [complex example from wikipedia](https://upload.wikimedia.org/wikipedia/commons/2/20/Sitemap_google.jpg), but you can create one without the screenshots, drop shadows, etc. ... just names of pages and where they flow to.
+[sitemap](documentation/sitemap.pdf)
 
 ## User Stories or Use Cases
 
-(___TODO__: write out how your application will be used through [user stories](http://en.wikipedia.org/wiki/User_story#Format) and / or [use cases](https://www.mongodb.com/download-center?jmp=docs&_ga=1.47552679.1838903181.1489282706#previous)_)
-
-1. as non-registered user, I can register a new account with the site
+1. as non-registered user, I can search for teas related to my key words
 2. as a user, I can log in to the site
-3. as a user, I can create a new grocery list
-4. as a user, I can view all of the grocery lists I've created in a single list
-5. as a user, I can add items to an existing grocery list
-6. as a user, I can cross off items in an existing grocery list
+3. as a user, I can save searches and teas in my favorites list
 
 ## Research Topics
 

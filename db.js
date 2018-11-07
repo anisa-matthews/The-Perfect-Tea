@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 
 const Tea = new mongoose.Schema({
     name: {type: String},
+    desc: {type: String},
     tags: //tag documents, type: doc array
 });
 
