@@ -16,7 +16,7 @@ const Tag = new mongoose.Schema({
 const User = new mongoose.Schema({
     // username provided by authentication plugin
     // password hash provided by authentication plugin
-    favs: //tea documents, type: doc array
+    favs: [Tea]
 });
 
 //connect to mongodb, export model
@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === 'PRODUCTION') {
     dbconf = conf.dbconf;
 } else {
     // if we're not in PRODUCTION mode, then use
-    dbconf = 'mongodb://localhost/am7931';
+    dbconf = 'mongodb://localhost/finalproject';
 }
 
 mongoose.connect(dbconf);

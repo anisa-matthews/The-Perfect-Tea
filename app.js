@@ -2,7 +2,7 @@ require('./db');
 
 const express = require('express');
 const path = require('path');
-const port = '27621';
+PORT = '27621';
 
 const mongoose = require('mongoose');
 
@@ -14,6 +14,11 @@ app.use(express.urlencoded({extended: false}));
 const Tea = mongoose.model('Tea');
 const Tag = mongoose.model('Tag');
 const User = mongoose.model('User');
+
+//make Tea Objects with a text file...
+
+
+
 
 // enable sessions
 const session = require('express-session');
@@ -49,4 +54,4 @@ app.get('/', (req, res) => {
     }
 });
 
-app.listen(port);
+app.listen(process.env.PORT || 3000);
