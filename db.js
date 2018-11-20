@@ -5,12 +5,12 @@ const mongoose = require('mongoose');
 const Tea = new mongoose.Schema({
     name: {type: String},
     desc: {type: String},
-    tags: //tag documents, type: doc array
+    tags: [String]
 });
 
 const Tag = new mongoose.Schema({
     name: {type: String},
-    teas: //tea documents, type: doc array
+    teas: [Tea]
 });
 
 const User = new mongoose.Schema({

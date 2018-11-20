@@ -1,0 +1,12 @@
+{{#if message}}
+<div class="error">{{ message }}</div>
+{{else}}
+    {{#each results}}
+    <div class="tea">
+        <img src='{{this.name}}.jpg'>
+        <p>{{this.desc}}</p>
+        //add tags associated w tea
+        //add a button to be able to put in favs
+    </div>
+    {{/each}}
+{{/if}}
