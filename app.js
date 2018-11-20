@@ -9,6 +9,11 @@ const app = express();
 
 app.use(express.urlencoded({extended: false}));
 
+//schemas
+const Tea = mongoose.model('Tea');
+const Tag = mongoose.model('Tag');
+const User = mongoose.model('User');
+
 // enable sessions
 const session = require('express-session');
 const sessionOptions = {
@@ -24,5 +29,23 @@ app.set('view engine', 'hbs');
 
 // serve static files
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', (req, res) => {
+    if(req.body.search){
+        //find tag object
+        Tag.findOne({name: req.body.search}, (err, tag) => {
+            if(err){
+                res.render('search', {message: "Cannot find any teas with those tags"});
+            }
+            else{
+                const teas = tag.teas;
+                res.render('search', {results: teas});
+            }
+        });
+    }
+    else{
+        res.render('landing');
+    }
+});
 
 app.listen(3000);

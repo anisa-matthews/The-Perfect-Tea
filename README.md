@@ -55,15 +55,15 @@ An Example User:
 
 /- landing page
 
-![landing page](documentation/home)
+![landing page](documentation/home.png)
 
-/search... - page generating search results
+/... - page generating search results
 
-![list](documentation/search)
+![list](documentation/search.png)
 
 /favorites - page for showing user's saved teas
 
-![list](documentation/favorites)
+![list](documentation/favorites.png)
 
 ## Site map
 
