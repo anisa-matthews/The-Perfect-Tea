@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: false}));
 // enable sessions
 const session = require('express-session');
 const sessionOptions = {
-    secret: '(store this elsewhere!)',
+    secret: '.(store this elsewhere!)',
     resave: true,
     saveUninitialized: true
 };
