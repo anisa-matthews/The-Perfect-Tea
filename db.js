@@ -19,6 +19,11 @@ const User = new mongoose.Schema({
     favs: [Tea]
 });
 
+//schemas
+mongoose.model('Tea', Tea);
+mongoose.model('Tag', Tag);
+mongoose.model('User', User);
+
 //connect to mongodb, export model
 // is the environment variable, NODE_ENV, set to PRODUCTION?
 let dbconf;
