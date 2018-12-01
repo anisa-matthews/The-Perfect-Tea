@@ -1,13 +1,25 @@
-{{#if message}}
-<div class="error">{{ message }}</div>
-{{else}}
-    {{#each results}}
-    <div class="tea">
-        <h3>{{this.name}}</h3>
-        <img src='img/{{this.name}}.jpg'>
-        <p>{{this.desc}}</p>
-        //add tags associated w tea
-        //add a button to be able to put in favs
-    </div>
-    {{/each}}
-{{/if}}
+<div class='container'>
+    {{#if message}}
+        <div class="error">{{ message }}</div>
+    {{else}}
+    <form method="get" action="" style="font-size: 12px;">
+            <input type="text" placeholder="Search..." name="search">
+            <input type="submit" value="submit">
+    </form>
+        <ul class="list-unstyled">
+        {{#each results}}
+                <li class="media" style="padding: 10px">
+                    <div class="media-left">
+                        <img class="mr-3" src='img/{{this.name}}.jpg' style="height:35%; border-radius:20px">
+                    </div>
+                    <div class="media-body">
+                        <h3 class="mt-0">{{this.name}} Tea</h3>
+                        <p class="align-self-center mr-3" style="padding: 20px">{{this.desc}}</p>
+                        <p class="align-self-end mr-3">tags: {{this.tags}}</p>
+                        <button class="align-self-end mr-3">Add to Favorites</button>
+                    </div>              
+                </li>
+                </ul>
+        {{/each}}
+    {{/if}}
+</div>

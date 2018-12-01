@@ -10,6 +10,24 @@
     margin: 0;
 }
 
+.cover-heading{
+    color: white;
+}
+
+#middle{
+    padding-top: 15%;
+    padding-bottom: 10%;
+    background: url('../img/Landing.jpg');
+}
+
+input {
+    margin-top: 15px;
+}
+
+.media{
+    border: solid black 5px;
+}
+
 #footer {
     display: inline-block;
     width: 100%;
