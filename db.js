@@ -1,6 +1,7 @@
 //Data Model Draft 1
 
 const mongoose = require('mongoose');
+const passportLocalMongoose = require('passport-local-mongoose');
 
 const Tea = new mongoose.Schema({
     name: {type: String},
@@ -18,6 +19,8 @@ const User = new mongoose.Schema({
     // password hash provided by authentication plugin
     favs: [String]
 });
+
+User.plugin(passportLocalMongoose);
 
 //schemas
 mongoose.model('Tea', Tea);

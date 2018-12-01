@@ -81,10 +81,13 @@ An Example User:
 
 *(3 points) Chart.js -> possible charts to display which tea maps most closely to search?
 
-*(3-4 points) user authentication.... extra library or randomly generated pin number?
+*(5 points) user authentication via Passport.js
 
 ## [Link to Initial Main Project File](app.js) 
 
 ## Annotations / References Used
 
 [tea object information]https://ratetea.com/styles.php
+[passport.js documentation]http://www.passportjs.org/docs/
+[bootstrap example docs]https://getbootstrap.com/docs/4.1/examples/
+[w3schools bootstrap basics]https://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp
