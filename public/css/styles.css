@@ -25,15 +25,14 @@ input {
 }
 
 .media{
-    border: solid black 5px;
+    opacity: .75;
 }
 
-#footer {
-    display: inline-block;
-    width: 100%;
-    color: green;
-    text-align: center;
-    bottom: 0px;
-    left: 0px;
-    padding-bottom: 30px;
+.media:hover{
+    opacity: 1.0;
+    background-color: white;
+}
+
+footer {
+    background-color: white;
 }

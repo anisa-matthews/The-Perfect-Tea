@@ -1,0 +1,18 @@
+<div class='container'>
+    <h3>{{user.username}}'s Favorites List</h3>
+    <br>
+    <ul class="list-unstyled">
+        {{#each favorite}}
+                <li class="media" style="padding: 10px">
+                    <div class="media-left">
+                        <img class="mr-3" src='img/{{this.name}}.jpg' style="height:35%; border-radius:20px">
+                    </div>
+                    <div class="media-body">
+                        <h3 class="mt-0">{{this.name}} Tea</h3>
+                        <p class="align-self-end mr-3">tags: {{this.tags}}</p>
+                        <form method="post" action="/favs"><input type="submit" name="favs" value={{this.name}} class="align-self-end mr-3"></form>
+                    </div>              
+                </li>
+        {{/each}}
+    </ul>
+</div>

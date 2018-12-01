@@ -79,9 +79,9 @@ An Example User:
 
 *(2 points) CSS framework with Bootstrap
 
-*(3 points) Chart.js -> possible charts to display which tea maps most closely to search?
+*(4 points) Perform client side form validation.....
 
-*(5 points) user authentication via Passport.js
+*(5 points) User authentication via Passport.js
 
 ## [Link to Initial Main Project File](app.js) 
 

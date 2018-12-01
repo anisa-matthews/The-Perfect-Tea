@@ -16,10 +16,13 @@
                         <h3 class="mt-0">{{this.name}} Tea</h3>
                         <p class="align-self-center mr-3" style="padding: 20px">{{this.desc}}</p>
                         <p class="align-self-end mr-3">tags: {{this.tags}}</p>
-                        <button class="align-self-end mr-3">Add to Favorites</button>
+                        <form method="post" action="/favs">
+                            <input type = "hidden" value = {{this.name}} name = "favtea"/>
+                            <input type="submit" value="Add to Favorites" class="align-self-end mr-3"/>
+                        </form>
                     </div>              
                 </li>
-                </ul>
         {{/each}}
+        </ul>
     {{/if}}
 </div>
