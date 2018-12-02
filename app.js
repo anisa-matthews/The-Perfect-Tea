@@ -130,10 +130,10 @@ app.get('/favs', (req, res) => {
 
 app.post('/favs', (req, res) => {
     if(req.user){
-        console.log(req.body.favtea + " added to " +req.user+ "'s favorites");
+        console.log(req.body.favtea + " added to " +req.user.username+ "'s favorites");
         let tmpfavs = req.user.favs;
         tmpfavs.push(req.body.tea);
-        User.update({username: req.user.username}, {favs: tmpfavs}, () => {
+        User.updateOne({username: req.user.username}, {favs: tmpfavs}, () => {
             res.redirect('/favs');
         });
     }
